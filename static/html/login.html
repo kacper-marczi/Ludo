@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: sans-serif;
+        }
+
+        #cont {
+            background-color: #eee;
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+            border-radius: 2px solid #bbb;
+        }
+
+        .label {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            align-items: stretch;
+        }
+
+        input {
+            display: block;
+            margin: 0;
+        }
+
+        #nickInput {
+            border: 2px solid rgb(202, 202, 202);
+            border-radius: 5px;
+            padding: 10px 20px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            outline: none;
+        }
+
+        #goInput {
+            border: 2px solid #0f76ca;
+            border-radius: 5px;
+            width: 80px;
+            background-color: #2196F3;
+            color: #fff;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div class="label">Podaj nick:</div>
+        <form action="/login" method="POST">
+            <input type="text" name="nick" id="nickInput" required>
+            <input type="submit" id="goInput" value="OK">
+        </form>
+    </div>
+</body>
+
+</html>
